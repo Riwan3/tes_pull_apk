@@ -28,10 +28,7 @@ class signUp extends StatelessWidget {
               const SizedBox(height: 30),
               const Text("english"),
               SizedBox(height: 200),
-              Text(
-                "Instagram",
-                style: TextStyle(fontSize: 50),
-              ),
+              Image.asset('assets/ig.png'),
               SizedBox(
                 height: 23,
               ),
@@ -71,7 +68,9 @@ class signUp extends StatelessWidget {
                 height: 40,
               ),
               TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/signup2');
+                  },
                   child: Text(
                     "Sign Up With Phone or Email",
                     style: TextStyle(
